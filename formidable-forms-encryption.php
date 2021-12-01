@@ -69,11 +69,11 @@ add_filter('frm_setup_edit_fields_vars', 'ff_decrypt_field_acf', 20, 3);
  * Decrypt fields in frontend 
  * usage [x decrypt=1]
  */
-function ff_decrypt_field_for_view( $encrypted_value, $tag, $atts, $field ) {
+function ff_decrypt_field_for_view( $string, $tag, $atts, $field ) {
     if( isset( $atts['decrypt'] ) ) {
-        $decrypted = ff_decrypt( $encrypted_value );
+        $string = ff_decrypt( $string );
     }
-    return $decrypted;
+    return $string;
 }
 add_filter('frmpro_fields_replace_shortcodes', 'ff_decrypt_field_for_view', 10, 4);
 
