@@ -1,6 +1,6 @@
 # Formidable Forms Encryption
 A Wordpress plugin to enable encrypting and decrypting of data entered using Formidable Forms. Requires Advanced Custom Fields (ACF) Plugin.
-Based upon [original code by Victor Font](https://victorfont.com/encrypt-decrypt-formidable-form-fields/).
+Based upon [original code](https://victorfont.com/encrypt-decrypt-formidable-form-fields/) by [Victor Font](https://github.com/vfontjr).
 
 ## Initial configuration
 The following lines need to be added to wp-config.php, substituting the strings as described below.
