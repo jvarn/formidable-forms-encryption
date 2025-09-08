@@ -100,7 +100,7 @@ function ff_acf_get_options() {
  */
 function ff_acf_array_flatten( $array ) {
 	if ( !is_array( $array ) ) {
-		return FALSE;
+		return array();
 	}
 	$result = array();
 	foreach ( $array as $key => $value ) {
